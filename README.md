@@ -31,5 +31,9 @@
 
 - [Код с интеграцией WordPress](https://github.com/Lelyaler/Cyberpunk-wordpress)
 - [Кастомный плагин](https://github.com/Lelyaler/Cyberpunk-custom-meta-tags)
+- [Простой код HTML, CSS и JavaScript](https://github.com/Lelyaler/Cyberpunk-only-html-css-js-)
+
+
+
 
 
