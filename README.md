@@ -1,39 +1,22 @@
-# Cyberpunk Landing Page
+# Cyberpunk — WordPress Theme
 
-Этот проект представляет собой полностью адаптивный лендинг, разработанный с использованием HTML, CSS и JavaScript, а также интегрированный с WordPress для управления контентом.
+> **Live Demo:** [https://lelyaler.github.io/Cyberpunk-only-html-css-js-/](https://lelyaler.github.io/Cyberpunk-only-html-css-js-/)
+> **HTML/CSS Source:** [https://github.com/Lelyaler/Cyberpunk-only-html-css-js-](https://github.com/Lelyaler/Cyberpunk-only-html-css-js-)
 
-## Этапы разработки
+Кастомная тема WordPress для промо-лендинга в стиле Cyberpunk 2077. Проект демонстрирует интеграцию сложной адаптивной вёрстки в экосистему WordPress с динамическим управлением контентом.
 
-1. **Верстка по техническому заданию**
-   - Создание макета в HTML/CSS с учетом адаптивности и кроссбраузерности (HTML5, CSS3, Flexbox/Grid).
+## Основные возможности
 
-2. **Интеграция в WordPress**
-   - Полная интеграция верстки в WordPress, создание темы с файлами `index.php`, `header.php`, `footer.php`, `functions.php`, `style.css`.
-   - Динамическое наполнение контента через административную панель.
+- **Шаблонизация темы**: разделение структуры на независимые компоненты (`header.php`, `footer.php`, `home.php`, `single.php`, `functions.php`).
+- **Кастомайзер WordPress**: интеграция с Theme Customizer для настройки параметров и цветовых акцентов из админ-панели.
+- **Хуки и SEO**: регистрация стилей, скриптов и мета-данных через хуки WordPress (`wp_enqueue_scripts`, `wp_head`).
+- **Кастомный плагин мета-тегов**: сопутствующий плагин [custom-meta-tags](https://github.com/Lelyaler/Cyberpunk-custom-meta-tags) для управления SEO-тегами через панель управления.
+- **Динамический контент**: вывод секций, меню и галереи с интерактивными слайдерами Swiper.
 
-3. **Бонусное задание**
-   - **Кастомайзер темы**: Добавлена возможность настройки цвета черных кнопок в кастомайзере WordPress.
-   - **Мета-теги через хуки**: Использование хуков для добавления мета-тегов в `<head>` для управления SEO-настройками.
+## Стек
 
-4. **Плагин для кастомных мета-тегов**
-   - Создан плагин с возможностью добавления и удаления мета-тегов через админ-панель. Плагин находится в папке `wp-content/plugins`, название — `custom-meta-tags`.
-   - Плагин успешно активирован и готов к использованию.
-
-## Установка
-
-1. Скачайте архив проекта.
-2. Распакуйте его и загрузите файлы на ваш сервер или локальный хостинг.
-3. В файле `wp-config.php` укажите данные для подключения к базе данных.
-4. Тема уже установлена и активирована в админ-панели WordPress.
-5. Плагин `custom-meta-tags` также уже установлен и активирован.
-
-## Ссылки на репозитории
-
-- [Код с интеграцией WordPress](https://github.com/Lelyaler/Cyberpunk-wordpress)
-- [Кастомный плагин](https://github.com/Lelyaler/Cyberpunk-custom-meta-tags)
-- [Простой код HTML, CSS и JavaScript](https://github.com/Lelyaler/Cyberpunk-only-html-css-js-)
-
-
-
-
-
+- WordPress
+- PHP
+- HTML5 / SCSS
+- JavaScript
+- Swiper
