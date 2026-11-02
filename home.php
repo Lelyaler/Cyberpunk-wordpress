@@ -142,7 +142,7 @@ Template Name: Home
           echo $hp_text;
         } else {
         ?>
-          <p class="display-info__text">
+          <p class="display-hp__text">
             Погрузись в атмосферу Найт-Сити с потрясающими дисплеями HP. Почувствуй каждый неоновый отблеск и динамику сражений благодаря передовым технологиям отображения.
           </p>
         <?php } ?>
@@ -186,7 +186,7 @@ Template Name: Home
       <source srcset="<?php cyberpunk_the_field('get-content__image_mob', get_template_directory_uri() . '/assets/img/get/mini/1.jpg', 'url'); ?>" media="(max-width: 320px)" />
       <source srcset="<?php cyberpunk_the_field('get-content__image_dec2', get_template_directory_uri() . '/assets/img/get/Untitled-1_2.jpg', 'url'); ?>" media="(max-width: 768px)" />
       <source srcset="<?php cyberpunk_the_field('get-content__image_dec', get_template_directory_uri() . '/assets/img/get/Untitled-1_1.jpg', 'url'); ?>" media="(max-width: 1024px)" />
-      <img class="get-content__image" src="<?php cyberpunk_the_field('get-content__image', get_template_directory_uri() . '/assets/img/get/1.jpg', 'url'); ?>" alt="Cyberpunk" />
+      <img class="get-content__image" src="<?php cyberpunk_the_field('get-content__image', get_template_directory_uri() . '/assets/img/get/Untitled-1_1.jpg', 'url'); ?>" alt="Cyberpunk" />
     </picture>
 
     <div class="get__containar container">
