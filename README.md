@@ -12,7 +12,8 @@
 ## Стек
 
 - WordPress 6.x / PHP 8.1+
-- Advanced Custom Fields Pro (Local JSON)
+- Advanced Custom Fields Pro (Local JSON & Gutenberg Blocks)
+- Gutenberg Block Editor (`acf_register_block_type`)
 - SCSS (BEM), Vanilla JS (ES6+)
 - Swiper.js (3D Cube effect)
 - Contact Form 7
@@ -20,12 +21,14 @@
 ## Структура файлов
 
 ```
-├── acf-json/               # Схема полей ACF Pro (автосинхронизация)
+├── acf-json/               # Схема полей ACF Pro и блоков Gutenberg (автосинхронизация)
 ├── assets/
 │   ├── css/                # SCSS исходники и собранный style.css
 │   ├── js/app.js           # Инициализация Swiper и анимации на IntersectionObserver
 │   └── img/                # Графика (WebP + SVG)
-├── functions.php           # Хуки, подключение стилей/скриптов, кастомайзер, фильтры SVG
+├── template-parts/
+│   └── blocks/             # Шаблоны кастомных блоков Gutenberg
+├── functions.php           # Хуки, регистрация блоков Gutenberg, кастомайзер, фильтры SVG
 ├── header.php              # Шапка, OpenGraph и SEO мета-теги, соцсети из ACF
 ├── home.php                # Шаблон главной страницы (Template Name: Home)
 ├── single.php              # Шаблон отдельной страницы (правила / лицензия)
@@ -36,6 +39,7 @@
 
 ## Архитектура и особенности реализации
 
+- **Кастомные блоки Gutenberg (ACF Blocks):** регистрация независимых блоков редактора через `acf_register_block_type()` с шаблонизацией в `template-parts/blocks/`. Блоки поддерживают предпросмотр в редакторе, параметры выравнивания и версионирование полей в Local JSON.
 - **Управление контентом через ACF:** все блоки (первый экран, галерея, розыгрыш, характеристики монитора HP, комплектация издания и ссылки на соцсети) вынесены в кастомные метаполя. Схема полей экспортирована в `acf-json/group_cyberpunk_homepage.json` и автоматически синхронизируется в админке при установленном ACF Pro.
 - **Theme Customizer:** в `functions.php` зарегистрирована секция кастомизатора с `WP_Customize_Color_Control`. Цвет кнопок задается из админки и подключается инлайн-стилем через `wp_add_inline_style` с санитизацией значения (`sanitize_hex_color`).
 - **Безопасная загрузка SVG:** добавлены хуки `upload_mimes` и `wp_check_filetype_and_ext` с проверкой прав `manage_options`, что позволяет загружать векторные логотипы только администратору и исключает XSS.

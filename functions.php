@@ -94,7 +94,7 @@ function mytheme_add_meta_tags()
   <meta name="keywords" content="Киберпанк, Cyberpunk 2077, приключенческая ролевая игра, Найт-Сити, киберпанковская эстетика, технологии будущего, мир будущего, игры" />
 
   <!-- Мета-тег для авторов -->
-  <meta name="author" content="Ваше Имя или Название Компании" />
+  <meta name="author" content="Valeria Chernyavskaya" />
 <?php
 }
 
@@ -110,4 +110,26 @@ add_filter('acf/settings/load_json', function ($paths) {
   $paths[] = get_stylesheet_directory() . '/acf-json';
   return $paths;
 });
+
+// Регистрация кастомных блоков Gutenberg через ACF Pro
+add_action('acf/init', 'cyberpunk_register_acf_blocks');
+function cyberpunk_register_acf_blocks() {
+  if (function_exists('acf_register_block_type')) {
+    acf_register_block_type(array(
+      'name'            => 'cyberpunk-promo-banner',
+      'title'           => __('Cyberpunk Promo Banner', 'cyberpunk'),
+      'description'     => __('Кастомный промо-баннер в стиле киберпанк с кнопкой действия.', 'cyberpunk'),
+      'render_template' => 'template-parts/blocks/promo-banner.php',
+      'category'        => 'formatting',
+      'icon'            => 'superhero-alt',
+      'keywords'        => array('cyberpunk', 'promo', 'banner', 'hero'),
+      'supports'        => array(
+        'align' => true,
+        'mode'  => true,
+        'jsx'   => true,
+      ),
+    ));
+  }
+}
+
 
