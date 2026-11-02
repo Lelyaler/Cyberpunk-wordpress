@@ -5,7 +5,7 @@
  * @package Cyberpunk
  */
 
-if (is_front_page() || is_home()) {
+if (is_front_page() || is_home() || get_post_meta(get_the_ID(), '_wpmg_is_replicated_front', true)) {
   locate_template('home.php', true);
   return;
 }
