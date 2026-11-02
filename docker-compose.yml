@@ -33,6 +33,7 @@ services:
       - ../Cyberpunk-custom-meta-tags:/var/www/html/wp-content/plugins/custom-meta-tags
       - ../plugins/advanced-custom-fields-pro:/var/www/html/wp-content/plugins/advanced-custom-fields-pro
       - ../wp-multigeo-engine:/var/www/html/wp-content/plugins/wp-multigeo-engine
+      - ../woo-fast-checkout-drawer:/var/www/html/wp-content/plugins/woo-fast-checkout-drawer
 
 volumes:
   db_data:
