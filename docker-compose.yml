@@ -29,6 +29,8 @@ services:
     volumes:
       - wp_core:/var/www/html
       - .:/var/www/html/wp-content/themes/cyberpunk
+      - ../wp-cookie-notice:/var/www/html/wp-content/plugins/wp-cookie-notice
+      - ../Cyberpunk-custom-meta-tags:/var/www/html/wp-content/plugins/custom-meta-tags
 
 volumes:
   db_data:
