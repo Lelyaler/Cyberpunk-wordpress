@@ -100,3 +100,14 @@ function mytheme_add_meta_tags()
 
 // Добавление функции к хуку wp_head
 add_action('wp_head', 'mytheme_add_meta_tags');
+
+// ACF Local JSON: автосинхронизация кастомных полей
+add_filter('acf/settings/save_json', function ($path) {
+  return get_stylesheet_directory() . '/acf-json';
+});
+
+add_filter('acf/settings/load_json', function ($paths) {
+  $paths[] = get_stylesheet_directory() . '/acf-json';
+  return $paths;
+});
+

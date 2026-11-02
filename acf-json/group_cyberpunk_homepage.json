@@ -1,0 +1,295 @@
+{
+  "key": "group_cyberpunk_homepage",
+  "title": "Главная страница — Настройки секций",
+  "fields": [
+    {
+      "key": "field_tab_intro",
+      "label": "Hero / Интро",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_content_title",
+      "label": "Заголовок первого экрана",
+      "name": "content__title",
+      "type": "text",
+      "default_value": "Доступно на всех платформах"
+    },
+    {
+      "key": "field_content_button",
+      "label": "Текст кнопки интро",
+      "name": "content__button",
+      "type": "text",
+      "default_value": "Узнать больше"
+    },
+    {
+      "key": "field_tab_about",
+      "label": "О Найт-Сити",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_about_title",
+      "label": "Заголовок блока О проекте",
+      "name": "about__title",
+      "type": "text",
+      "default_value": "Найт-Сити изменит тебя навсегда"
+    },
+    {
+      "key": "field_about_text",
+      "label": "Текст блока О проекте",
+      "name": "about_text",
+      "type": "wysiwyg"
+    },
+    {
+      "key": "field_item_box",
+      "label": "Изображение галереи 1",
+      "name": "item__box",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_item_box2",
+      "label": "Изображение галереи 2",
+      "name": "item__box2",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_item_box3",
+      "label": "Изображение галереи 3 (Десктоп)",
+      "name": "item__box3",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_item_box3_mobil",
+      "label": "Изображение галереи 3 (Мобильное)",
+      "name": "item__box3_mobil",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_tab_draw",
+      "label": "Розыгрыш призов",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_draw_star",
+      "label": "Иконка звезды розыгрыша",
+      "name": "draw_star",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_draw_title",
+      "label": "Заголовок розыгрыша",
+      "name": "draw__title",
+      "type": "text",
+      "default_value": "Играй и выигрывай!"
+    },
+    {
+      "key": "field_draw_text",
+      "label": "Описание условий розыгрыша",
+      "name": "draw_text",
+      "type": "wysiwyg"
+    },
+    {
+      "key": "field_image_info",
+      "label": "Изображение призов (Десктоп)",
+      "name": "image__info",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_image_info_decktop",
+      "label": "Изображение призов (Планшет)",
+      "name": "image__info_decktop",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_image_info_mobail",
+      "label": "Изображение призов (Мобильное)",
+      "name": "image__info_mobail",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_tab_display",
+      "label": "Мониторы HP",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_display_hp_image",
+      "label": "Изображение монитора",
+      "name": "display-hp__image",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_display_hp_title",
+      "label": "Заголовок HP промо",
+      "name": "display-hp",
+      "type": "text",
+      "default_value": "Полное погружение вместе с HP"
+    },
+    {
+      "key": "field_display_hp_text",
+      "label": "Текст описания HP",
+      "name": "display-hp__text",
+      "type": "wysiwyg"
+    },
+    {
+      "key": "field_item_hp_info1",
+      "label": "Преимущество 1",
+      "name": "item-hp__info1",
+      "type": "text"
+    },
+    {
+      "key": "field_item_hp_info2",
+      "label": "Преимущество 2",
+      "name": "item-hp__info2",
+      "type": "text"
+    },
+    {
+      "key": "field_item_hp_info3",
+      "label": "Преимущество 3",
+      "name": "item-hp__info3",
+      "type": "text"
+    },
+    {
+      "key": "field_display_button",
+      "label": "Текст кнопки подробнее",
+      "name": "display__button",
+      "type": "text",
+      "default_value": "Подробнее"
+    },
+    {
+      "key": "field_tab_get",
+      "label": "Купить игру / Комплектация",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_get_title",
+      "label": "Заголовок блока Купить",
+      "name": "get__title",
+      "type": "text",
+      "default_value": "Купить игру Cyberpunk 2077"
+    },
+    {
+      "key": "field_get_content_image",
+      "label": "Изображение коробки игры (Десктоп)",
+      "name": "get-content__image",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_get_content_image_mob",
+      "label": "Изображение коробки игры (Мобильное)",
+      "name": "get-content__image_mob",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_get_content_image_dec",
+      "label": "Изображение коробки игры (Планшет)",
+      "name": "get-content__image_dec",
+      "type": "image",
+      "return_format": "url"
+    },
+    {
+      "key": "field_get_subtitle",
+      "label": "Пункт комплектации 1",
+      "name": "get__subtitle",
+      "type": "text"
+    },
+    {
+      "key": "field_get_subtitle2",
+      "label": "Пункт комплектации 2",
+      "name": "get__subtitle2",
+      "type": "text"
+    },
+    {
+      "key": "field_get_subtitle3",
+      "label": "Пункт комплектации 3",
+      "name": "get__subtitle3",
+      "type": "text"
+    },
+    {
+      "key": "field_tab_footer",
+      "label": "Подвал & Соцсети",
+      "name": "",
+      "type": "tab",
+      "placement": "top"
+    },
+    {
+      "key": "field_youtube_link",
+      "label": "YouTube Ссылка",
+      "name": "youtube_link",
+      "type": "url"
+    },
+    {
+      "key": "field_vk_link",
+      "label": "VK Ссылка",
+      "name": "vk_link",
+      "type": "url"
+    },
+    {
+      "key": "field_facebook_link",
+      "label": "Facebook Ссылка",
+      "name": "facebook_link",
+      "type": "url"
+    },
+    {
+      "key": "field_twit_link",
+      "label": "Twitter Ссылка",
+      "name": "twit_link",
+      "type": "url"
+    },
+    {
+      "key": "field_twitch_link",
+      "label": "Twitch Ссылка",
+      "name": "twitch_link",
+      "type": "url"
+    },
+    {
+      "key": "field_inst_link",
+      "label": "Instagram Ссылка",
+      "name": "inst_link",
+      "type": "url"
+    },
+    {
+      "key": "field_copy",
+      "label": "Копирайт в подвале",
+      "name": "copy",
+      "type": "text",
+      "default_value": "CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® являются зарегистрированными товарными знаками компании CD PROJEKT S.A. © 2024 CD PROJEKT S.A. Все права сохранены."
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "home.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Схема полей ACF Pro для промо-темы Cyberpunk 2077"
+}
