@@ -86,6 +86,9 @@ add_action('customize_register', 'mytheme_customize_register');
 // Функция для добавления мета-тегов
 function mytheme_add_meta_tags()
 {
+  if (function_exists('cmt_add_meta_tags')) {
+    return;
+  }
 ?>
   <!-- Мета-тег для описания -->
   <meta name="description" content="<?php echo esc_attr(get_bloginfo('description')); ?>" />
@@ -100,6 +103,32 @@ function mytheme_add_meta_tags()
 
 // Добавление функции к хуку wp_head
 add_action('wp_head', 'mytheme_add_meta_tags');
+
+/**
+ * Получение значения ACF поля с запасным дефолтным значением
+ */
+function cyberpunk_get_field($name, $default = '') {
+  if (function_exists('get_field')) {
+    $val = get_field($name);
+    if (!empty($val)) {
+      return $val;
+    }
+  }
+  return $default;
+}
+
+function cyberpunk_the_field($name, $default = '', $escape = 'html') {
+  $val = cyberpunk_get_field($name, $default);
+  if ($escape === 'url') {
+    echo esc_url($val);
+  } elseif ($escape === 'attr') {
+    echo esc_attr($val);
+  } elseif ($escape === 'raw') {
+    echo $val;
+  } else {
+    echo esc_html($val);
+  }
+}
 
 // ACF Local JSON: автосинхронизация кастомных полей
 add_filter('acf/settings/save_json', function ($path) {

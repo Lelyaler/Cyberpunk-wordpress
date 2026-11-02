@@ -1,59 +1,127 @@
 {
-  "key": "group_cyberpunk_promo_block",
-  "title": "Блок: Cyberpunk Promo Banner (Gutenberg)",
-  "fields": [
-    {
-      "key": "field_block_banner_title",
-      "label": "Заголовок баннера",
-      "name": "banner_title",
-      "type": "text",
-      "default_value": "Добро пожаловать в Найт-Сити"
-    },
-    {
-      "key": "field_block_banner_subtitle",
-      "label": "Подзаголовок",
-      "name": "banner_subtitle",
-      "type": "textarea",
-      "rows": 3,
-      "default_value": "Город будущего ждёт своих героев."
-    },
-    {
-      "key": "field_block_banner_bg",
-      "label": "Фоновое изображение",
-      "name": "banner_bg_image",
-      "type": "image",
-      "return_format": "url"
-    },
-    {
-      "key": "field_block_banner_btn_text",
-      "label": "Текст кнопки",
-      "name": "banner_btn_text",
-      "type": "text",
-      "default_value": "Подробнее"
-    },
-    {
-      "key": "field_block_banner_btn_url",
-      "label": "Ссылка кнопки",
-      "name": "banner_btn_url",
-      "type": "url",
-      "default_value": "#"
-    }
-  ],
-  "location": [
-    [
-      {
-        "param": "block",
-        "operator": "==",
-        "value": "acf/cyberpunk-promo-banner"
-      }
-    ]
-  ],
-  "menu_order": 0,
-  "position": "normal",
-  "style": "default",
-  "label_placement": "top",
-  "instruction_placement": "label",
-  "hide_on_screen": "",
-  "active": true,
-  "description": "Поля для кастомного блока Gutenberg Promo Banner"
+    "key": "group_cyberpunk_promo_block",
+    "title": "Блок: Cyberpunk Promo Banner (Gutenberg)",
+    "fields": [
+        {
+            "key": "field_block_banner_title",
+            "label": "Заголовок баннера",
+            "name": "banner_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Добро пожаловать в Найт-Сити",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_block_banner_subtitle",
+            "label": "Подзаголовок",
+            "name": "banner_subtitle",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "default_value": "Город будущего ждёт своих героев.",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_block_banner_bg",
+            "label": "Фоновое изображение",
+            "name": "banner_bg_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_block_banner_btn_text",
+            "label": "Текст кнопки",
+            "name": "banner_btn_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Подробнее",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_block_banner_btn_url",
+            "label": "Ссылка кнопки",
+            "name": "banner_btn_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cyberpunk-promo-banner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Поля для кастомного блока Gutenberg Promo Banner",
+    "show_in_rest": false,
+    "modified": 1793622294
 }
