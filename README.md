@@ -4,7 +4,7 @@
 
 - **Демо (статическая верстка):** [lelyaler.github.io/Cyberpunk-only-html-css-js-/](https://lelyaler.github.io/Cyberpunk-only-html-css-js-/)
 - **Репозиторий верстки:** [github.com/Lelyaler/Cyberpunk-only-html-css-js-](https://github.com/Lelyaler/Cyberpunk-only-html-css-js-)
-- **Плагин мета-тегов:** [github.com/Lelyaler/Cyberpunk-custom-meta-tags](https://github.com/Lelyaler/Cyberpunk-custom-meta-tags)
+- **Плагин мета-тегов:** [github.com/Lelyaler/custom-meta-tags-manager](https://github.com/Lelyaler/custom-meta-tags-manager)
 - **Плагин cookie-уведомления:** [github.com/Lelyaler/wp-cookie-notice](https://github.com/Lelyaler/wp-cookie-notice)
 
 ![Превью темы](screenshot.png)
